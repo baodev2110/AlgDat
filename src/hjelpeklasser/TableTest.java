@@ -14,7 +14,7 @@ class TableTest
         int [] b = {3,2,1};
         int [] c = {2,3,1};
 
-        assertEquals(2, Table.min(b, 2, 3));
+        assertEquals(2, Tabell.min(b, 2, 3));
     }
 
     @Test
@@ -23,7 +23,7 @@ class TableTest
         int [] b = {3,2,1};
 
 
-        assertEquals(0, Table.maks(b, 0, 3));
+        assertEquals(0, Tabell.maks(b, 0, 3));
 
     }
 
@@ -34,8 +34,8 @@ class TableTest
         int [] b = {3,2,1};
         int [] c = {2,1,3};
 
-        assertEquals(0, Table.min(a));
-        assertEquals(2, Table.min(b));
-        assertEquals(1, Table.min(c));
+        assertEquals(0, Tabell.min(a));
+        assertEquals(2, Tabell.min(b));
+        assertEquals(1, Tabell.min(c));
     }
 }

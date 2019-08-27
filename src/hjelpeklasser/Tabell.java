@@ -1,17 +1,21 @@
 package hjelpeklasser;
 
-public class Table
+public class Tabell
 {
+    private Tabell(){}
+
+
+
     // finner minste tall i array mellom et intervall
-    public static int min(int[] a, int from, int to)
+    public static int min(int[] a, int fra, int til)
     {
-        if(from < 0 || to > a.length || from >= to)
+        if(fra < 0 || til > a.length || fra >= til)
             throw new IllegalArgumentException("Ugyldig intervall");
 
-        int minPos = from;
-        int minVal = a[from];
+        int minPos = fra;
+        int minVal = a[fra];
 
-        for(int i = from; i < to; i++)
+        for(int i = fra; i < til; i++)
         {
             if(a[i] < minVal)
             {
