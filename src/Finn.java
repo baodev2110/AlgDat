@@ -25,7 +25,7 @@ public class Finn
             if(a[i] < a[min])
                 min = a[i];
 
-            if(a[i] > a[max])
+            else if(a[i] > a[max])
                 max = a[i];
         }
 
